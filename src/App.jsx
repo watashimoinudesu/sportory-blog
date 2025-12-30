@@ -1,85 +1,67 @@
-import './App.css'
+function NavBar() {
+  return (
+    <nav className="flex items-center justify-between py-4 px-8 bg-white border-b ">
+      <a href="/" className="text-2xl font-bold">
+      The Sportory<span className="text-blue-500">.</span>
+      </a>
+      <div className="hidden md:flex space-x-4">
+        <a href="/login" className="px-9 py-2  rounded-full border">
+          Log in
+        </a>
+        <a
+          href="/signup"
+          className="px-8 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition-colors"
+        >
+          Sign up
+        </a>
+      </div>
+      <button className="md:hidden">Menu</button>
+    </nav>
+  );
+}
+
+function HeroSection() {
+  return (
+    <main className="container px-4 py-8 lg:py-16 mx-auto">
+      <div className="flex flex-col lg:flex-row items-center">
+        <div className="lg:w-1/3 mb-8 lg:mb-0 lg:pr-8">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+            Stay <br className="hidden lg:block" />
+            Informed, <br />
+            Stay Inspired,
+          </h1>
+          <p className="text-lg text-gray-500">
+            Discover a World of Knowledge at Your Fingertips. Your Daily Dose of
+            Inspiration and Information.
+          </p>
+        </div>
+        <img
+          src="src\assets\peoplewithcat.jpg"
+          alt="Person with a cat"
+          className="h-[530px] object-cover rounded-lg shadow-lg lg:w-1/3 mx-4 mb-8 lg:mb-0"
+        />
+        <div className="lg:w-1/3 lg:pl-8">
+          <h2 className="text-xl font-semibold mb-2">-Author</h2>
+          <h3 className="text-2xl font-bold mb-4">Tiz T.</h3>
+          <p className="text-gray-500 mb-4">
+          I am a sports enthusiast and freelance writer with a passion for a wide range of sports. I enjoy sharing insights, analysis, and stories that capture the excitement and spirit of competition.
+          </p>
+          <p className="text-gray-500">
+            When I&apos;m not writing, I spend my time following major sporting events, tracking athlete performances, and staying up to date with the latest sports news.
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}
 
 function App() {
-    return (
-      <div className="min-h-screen bg-[var(--color-brown-100)] p-8">
-        {/* Base style label */}
-        <div className="mb-4 inline-block rounded bg-white px-3 py-1 text-xs text-[var(--color-brown-500)]">
-          Base style
-        </div>
-  
-        <div className="rounded-xl bg-white p-8">
-          <div className="grid grid-cols-2 gap-12">
-            {/* LEFT: Colors */}
-            <div>
-              <p className="text-sm text-[var(--color-brown-400)]">Color</p>
-              <h2 className="text-lg font-semibold text-[var(--color-brown-400)]">
-                Colors
-              </h2>
-  
-              <p className="mt-6 text-sm text-[var(--color-brown-400)]">Base</p>
-  
-              <div className="mt-3 flex gap-4">
-                <ColorBox label="Brown 600" hex="#26231E" color="--color-brown-600" />
-                <ColorBox label="Brown 500" hex="#43403B" color="--color-brown-500" />
-                <ColorBox label="Brown 400" hex="#75716B" color="--color-brown-400" />
-                <ColorBox label="Brown 300" hex="#DAD6D1" color="--color-brown-300" />
-                <ColorBox label="Brown 200" hex="#EFECEB" color="--color-brown-200" />
-                <ColorBox label="Brown 100" hex="#F9F8F6" color="--color-brown-100" />
-                <ColorBox label="White" hex="#FFFFFF" color="--color-white" />
-              </div>
-  
-              <p className="mt-8 text-sm text-[var(--color-brown-400)]">Brand</p>
-  
-              <div className="mt-3 flex gap-4">
-                <ColorBox label="Orange" hex="#F2B68C" color="--color-brand-orange" />
-                <ColorBox label="Green" hex="#12B279" color="--color-brand-green" />
-                <ColorBox label="Green" hex="#D7F2E9" color="--color-brand-green-soft" />
-                <ColorBox label="Red" hex="#EB5164" color="--color-brand-red" />
-              </div>
-            </div>
-  
-            {/* RIGHT: Fonts */}
-            <div>
-              <p className="text-sm text-[var(--color-brown-400)]">Font</p>
-              <h2 className="text-lg font-semibold text-[var(--color-brown-400)]">
-                Fonts
-              </h2>
-  
-              <div className="mt-8 space-y-4 text-[var(--color-brown-600)]">
-                <div className="text-headline-1">Headline 1</div>
-                <div className="text-headline-2">Headline 2</div>
-                <div className="text-headline-3">Headline 3</div>     
-  
-                <div className="text-headline-4">Headline 4</div>
-                <div className="text-body-1">Body 1</div>
-                <div className="text-body-2">Body 2</div>
-                <div className="text-body-3">Body 3</div>
-  
+  return (
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  
-  /* small helper */
-  function ColorBox({ label, hex, color }) {
-    return (
-      <div>
-        <div
-          className="h-16 w-20 rounded-lg border border-[var(--color-brown-300)]"
-          style={{ backgroundColor: `var(${color})` }}
-        />
-        <div className="mt-1 text-xs">
-          <div className="text-[var(--color-brown-600)]">{label}</div>
-          <div className="text-[var(--color-brown-400)]">{hex}</div>
-        </div>
-      </div>
-    );
-  }
-  
-
-export default App
+    <>
+      <NavBar />
+      <HeroSection />
+    </>
+  );
+}
+export default App;
