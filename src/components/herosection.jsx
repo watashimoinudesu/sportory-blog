@@ -1,3 +1,6 @@
+import heroImage from "../assets/author.jpg"
+
+
 export function HeroSection() {
     return (
       <main className="container px-4 py-8 lg:py-16 mx-auto">
@@ -13,7 +16,7 @@ export function HeroSection() {
             </p>
           </div>
           <img
-            src="src\assets\author.jpg"
+            src={heroImage}
             alt="Picture of Author"
             className="h-[530px] object-cover rounded-lg shadow-lg lg:w-1/3 mx-4 mb-8 lg:mb-0"
           />
