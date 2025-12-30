@@ -1,6 +1,6 @@
 import { Footer } from "./components/footer";
 import { NavBar } from "./components/navbar";
-import { HeroSection } from "./components/HeroSection";
+import { HeroSection } from "./components/herosection";
 // import { Button } from "./ui/button";
 import Articles from "./components/articlesection";
 
