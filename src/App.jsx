@@ -5,7 +5,7 @@ import { HeroSection } from "./components/herosection";
 
 // import { Button } from "./ui/button";
 import Articles from "./components/articlesection";
-import { BlogCard } from "./components/blogcard";
+import { BlogCard } from "./components/BlogCard";
 import { blogPosts } from "./data/blogPosts";
 
 function App() {
