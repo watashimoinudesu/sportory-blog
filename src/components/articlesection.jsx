@@ -10,8 +10,8 @@ import {
 
 export default function Articles() {
   return (
-    <div className="w-full max-w-7xl mx-auto md:px-6 lg:px-8 mb-10">
-      <h2 className="text-xl font-bold mb-4 px-4">Latest articles</h2>
+    <div className="w-full mb-10">
+      <h2 className="text-xl font-bold mb-4">Latest articles</h2>
       <div className="bg-[#EFEEEB] px-4 py-4 md:py-3 md:rounded-sm flex flex-col space-y-4 md:flex-row-reverse md:items-center md:space-y-0 md:justify-between">
         <div className="w-full md:max-w-sm">
           <div className="relative">
@@ -44,19 +44,19 @@ export default function Articles() {
             Highlight
           </button>
           <button
-            className="px-4 py-3 transition-colors rounded-sm text-sm text-muted-foreground font-medium bg-[muted]
+            className="px-4 py-3 transition-colors rounded-sm text-sm text-muted-foreground font-medium bg-muted
             "
           >
             Sport
           </button>
           <button
-            className="px-4 py-3 transition-colors rounded-sm text-sm text-muted-foreground font-medium bg-[muted]
+            className="px-4 py-3 transition-colors rounded-sm text-sm text-muted-foreground font-medium bg-muted
             "
           >
             Inspiration
           </button>
           <button
-            className="px-4 py-3 transition-colors rounded-sm text-sm text-muted-foreground font-medium bg-[muted]
+            className="px-4 py-3 transition-colors rounded-sm text-sm text-muted-foreground font-medium bg-muted
             "
           >
             General
