@@ -5,8 +5,9 @@ import { HeroSection } from "./components/herosection";
 
 // import { Button } from "./ui/button";
 import Articles from "./components/articlesection";
-import { BlogCard } from "./components/BlogCard";
-import { blogPosts } from "./data/blogPosts";
+
+
+import { BlogCardSection } from "./components/BlogCardSection";
 
 function App() {
   return (
@@ -17,14 +18,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <Articles />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 auto-rows-fr">
-        <BlogCard {...blogPosts[0]} />
-        <BlogCard {...blogPosts[1]} />
-        <BlogCard {...blogPosts[2]} />
-        <BlogCard {...blogPosts[3]} />
-        <BlogCard {...blogPosts[4]} />
-        <BlogCard {...blogPosts[5]} />
-      </div>
+      <BlogCardSection />
       <Footer />
       </div>
 
